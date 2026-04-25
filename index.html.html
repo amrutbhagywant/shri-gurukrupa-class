@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Gurukrupa English Speaking Class</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --light: #f4f4f4;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        nav { background: var(--primary); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav h1 { margin: 0; font-size: 1.5rem; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80'); 
+                height: 60vh; background-size: cover; background-position: center; display: flex; flex-direction: column; 
+                justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .btn { background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-size: 1.1rem; transition: 0.3s; }
+        .btn:hover { background: #d35400; }
+
+        /* Sections */
+        .section { padding: 50px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--primary); }
+
+        /* Footer/Contact */
+        footer { background: #222; color: white; padding: 40px 10%; text-align: center; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+        .contact-form { max-width: 500px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Shri Gurukrupa</h1>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Join Now</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Unlock Your Potential</h2>
+    <p>Join Shri Gurukrupa English Speaking Class and speak fluently in just 90 days.</p><br>
+    <a href="#contact" class="btn">Book a Free Demo</a>
+</section>
+
+<section class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Expert Coaching</h3>
+            <p>Learn from trainers with over 10 years of experience in communication skills.</p>
+        </div>
+        <div class="card">
+            <h3>Flexible Batches</h3>
+            <div class="content">Morning, afternoon, and evening batches for students and professionals.</div>
+        </div>
+        <div class="card">
+            <h3>Personal Attention</h3>
+            <p>Small batch sizes to ensure every student gets a chance to speak and improve.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="courses" style="background: var(--light);">
+    <h2>Our Courses</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Basic English</h3>
+            <p>For beginners. Grammar, sentence formation, and daily vocabulary.</p>
+        </div>
+        <div class="card">
+            <h3>Advanced Fluency</h3>
+            <p>Public speaking, group discussions, and personality development.</p>
+        </div>
+        <div class="card">
+            <h3>Business English</h3>
+            <p>Professional communication, email writing, and interview preparation.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Address: [Insert Your Address Here, Kolhapur/Mumbai]</p>
+    <p>Phone: +91 [Your Number] | Email: info@shrigurukrupa.com</p>
+    
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Your Message" rows="4"></textarea>
+            <button type="submit" class="btn" style="border:none; cursor:pointer; width:100%;">Send Inquiry</button>
+        </form>
+    </div>
+</footer>
+
+</body>
+</html>
